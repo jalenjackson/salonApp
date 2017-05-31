@@ -9,9 +9,7 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
-
 gem 'elm-rails'
-
 gem 'stripe'
 
 group :development, :test do
@@ -39,6 +37,7 @@ end
 
 group :production do
   gem 'pg', '~> 0.18'
+  gem 'rails_12factor'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
