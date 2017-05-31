@@ -11,6 +11,10 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'elm-rails'
 gem 'stripe'
+gem 'webpack-rails'
+gem 'foreman'
+
+
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -38,6 +42,9 @@ end
 group :production do
   gem 'pg', '~> 0.18'
   gem 'rails_12factor'
+  gem 'elm-compiler'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'foreman'
