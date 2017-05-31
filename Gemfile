@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'puma', '~> 3.0'
-gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -31,6 +30,7 @@ group :test do
 end
 
 group :development do
+  gem 'sqlite3'
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
