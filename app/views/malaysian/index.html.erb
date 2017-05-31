@@ -1,0 +1,31 @@
+<% @products.each do |product| %>
+    <% if product.category == "Malaysian" %>
+        <section class="section">
+          <div class="box">
+            <article class="product media">
+              <figure class="media-left">
+                <p class="image is-128x128">
+                  <img src="http://placehold.it/256x256">
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong><%= product.name %></strong>
+                  </p>
+                </div>
+                <nav class="level">
+                  <div class="level-left">
+                    <a href="#" data-product-id="<%= product.id %>" class="add-to-cart level-item">
+                      <span class="icon"><i class="fa fa-cart-plus"></i></span>
+                      Add to Cart
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </article>
+          </div>
+        </section>
+
+    <% end %>
+<% end %>
